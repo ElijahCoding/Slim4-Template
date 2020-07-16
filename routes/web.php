@@ -1,5 +1,5 @@
 <?php
 
-$app->get('/', function ($request, $response, $args) {
-    return $response;
-});
+use App\Controllers\HomeController;
+
+$app->get('/', HomeController::class . ':index');
